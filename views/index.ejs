@@ -9,11 +9,11 @@
         </div>
         <form action="/route/login" method="POST">
             <div class="form-group py-4">
-                <input type="email" class="form-control" placeholder="email" name="email">
+                <input type="email" class="form-control" placeholder="email" name="email" value=<%= locals.email?email:''%>>
                 <span></span>
             </div>
             <div class="form-group">
-                <input type="password" class="form-control" placeholder="password" name="password">
+                <input type="password" class="form-control" placeholder="password" name="password" value=<%= locals.password?password:''%>>
                 <span></span>
             </div>
             <button type="submit" class="btn  m-5 submit-btn">Submit</button>
